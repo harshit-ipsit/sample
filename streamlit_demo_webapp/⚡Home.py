@@ -20,7 +20,8 @@ st.markdown("""
     [data-testid="stSidebarNav"] {
         background-image: url(https://w.amazon.com/rest/wikis/xwiki/s3files/file/logo-generic.png);
         background-repeat: no-repeat;
-        padding-top: 10px;
+        background-size: contain; /* Fit the logo without clipping */
+        padding-top: 100px;  /* Space for logo */
         background-position: 20px 20px;
     }
     </style>
