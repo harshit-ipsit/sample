@@ -17,8 +17,11 @@ st.markdown("""
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
-    .profileImage_gzau3_78 _darkThemeShadow_gzau3_91 {visibility: hidden;}
-    .link_gzau3_10 {visibility: hidden;}
+
+    /* Hide App Creator Avatar by data-testid */
+    img[data-testid="appCreatorAvatar"] {
+        display: none !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 
