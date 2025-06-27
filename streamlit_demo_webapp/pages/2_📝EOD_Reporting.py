@@ -18,11 +18,20 @@ st.markdown("""
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
-    [data-testid="stSidebarNav"] {
-        background-image: url(https://w.amazon.com/rest/wikis/xwiki/s3files/file/logo-generic.png);
+
+    /* Insert logo at the top of sidebar using ::before */
+    [data-testid="stSidebarNav"]::before {
+        content: "";
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        height: 80px;
+        width: 160px;
+        background-image: url("https://w.amazon.com/rest/wikis/xwiki/s3files/file/logo-generic.png");
+        background-size: contain;
         background-repeat: no-repeat;
-        padding-top: 10px;
-        background-position: 20px 20px;
+        background-position: center;
     }
     </style>
 """, unsafe_allow_html=True)
