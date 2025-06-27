@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import streamlit as st
+from PIL import Image
 
 # --- Page Config ---
 st.set_page_config(
@@ -30,7 +31,7 @@ st.markdown("""
 
 # --- Sidebar Logo ---
 with st.sidebar:
-    st.image("logo-generic.png", use_column_width=True)
+    st.image("logo-generic.png", width=150)
 
 # --- Header Section ---
 with st.container():
