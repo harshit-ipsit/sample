@@ -13,30 +13,26 @@ st.set_page_config(
 # --- Inline Custom CSS ---
 st.markdown("""
     <style>
-    /* Hide Streamlit Branding */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
 
-    /* Hide entire container that holds the App Creator avatar */
-    div:has(img[data-testid="appCreatorAvatar"]) {
-        display: none !important;
-    }
-
-    /* Also hide GitHub profile link if present separately */
-    a[href*="github.com"] {
-        display: none !important;
+    /* Insert logo at the top of sidebar using ::before */
+    [data-testid="stSidebarNav"]::before {
+        content: "";
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        height: 80px;
+        width: 160px;
+        background-image: url("https://w.amazon.com/rest/wikis/xwiki/s3files/file/logo-generic.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     </style>
 """, unsafe_allow_html=True)
-
-# --- Sidebar Logo ---
-with st.sidebar:
-    st.image(
-        "https://w.amazon.com/rest/wikis/xwiki/s3files/file/logo-generic.png",
-        use_container_width=True
-    )
-
 # --- Header Section ---
 with st.container():
     # st.title("AIO Portal")
