@@ -17,8 +17,8 @@ st.markdown("""
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
-    ._profileImage_gzau3_78 _darkThemeShadow_gzau3_91 {visibility: hidden;}
-    ._link_gzau3_10 {visibility: hidden;}
+    .profileImage_gzau3_78 _darkThemeShadow_gzau3_91 {visibility: hidden;}
+    .link_gzau3_10 {visibility: hidden;}
     </style>
 """, unsafe_allow_html=True)
 
