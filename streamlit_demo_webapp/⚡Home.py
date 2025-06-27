@@ -31,7 +31,7 @@ st.markdown("""
 
 # --- Sidebar Logo ---
 with st.sidebar:
-    st.image("logo-generic.png", width=150)
+    st.image("images/logo-generic.png", width=150)
 
 # --- Header Section ---
 with st.container():
