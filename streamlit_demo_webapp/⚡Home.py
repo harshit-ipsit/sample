@@ -4,7 +4,7 @@ import streamlit as st
 
 # --- Page Config ---
 st.set_page_config(
-    page_title="KIX Home",
+    page_title="Home",
     page_icon=":zap:",
     layout="wide",
     initial_sidebar_state="expanded",
