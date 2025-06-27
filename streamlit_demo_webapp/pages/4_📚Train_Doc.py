@@ -38,6 +38,9 @@ st.markdown("""
 
 st.title("Train Doc")
 st.write(st.experimental_user)
+# Behind a reverse proxy
+st.experimental_get_query_params().get("user", ["Unknown"])[0]
+
 
 # --- Quip Client Setup using Secrets ---
 try:
