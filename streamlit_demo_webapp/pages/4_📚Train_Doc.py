@@ -74,4 +74,3 @@ if submitted:
         st.success(f"Added to Quip: {emp_id}, {name}, {alias}, {location}")
     except Exception as e:
         st.error(f"Failed to add data to Quip: {str(e)}")
-🛠️
