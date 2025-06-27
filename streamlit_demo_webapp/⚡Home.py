@@ -1,11 +1,10 @@
 #!/usr/bin/python
 
 import streamlit as st
-from PIL import Image
 
 # --- Page Config ---
 st.set_page_config(
-    page_title="Home",
+    page_title="KIX Home",
     page_icon=":zap:",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -18,20 +17,14 @@ st.markdown("""
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
-
-    /* Sidebar Logo Styling */
     [data-testid="stSidebarNav"] {
+        background-image: url(https://w.amazon.com/rest/wikis/xwiki/s3files/file/logo-generic.png);
         background-repeat: no-repeat;
-        background-size: contain; /* Fit the logo without clipping */
+        padding-top: 10px;
         background-position: 20px 20px;
-        padding-top: 100px;  /* Space for logo */
     }
     </style>
 """, unsafe_allow_html=True)
-
-# --- Sidebar Logo ---
-with st.sidebar:
-    st.image("images/logo-generic.png", width=150)
 
 # --- Header Section ---
 with st.container():
