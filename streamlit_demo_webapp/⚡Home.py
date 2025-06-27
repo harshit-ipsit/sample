@@ -22,7 +22,10 @@ st.markdown("""
 
 # --- Sidebar Logo ---
 with st.sidebar:
-    st.image("https://w.amazon.com/rest/wikis/xwiki/s3files/file/logo-generic.png", use_column_width=True)
+    st.image(
+        "https://w.amazon.com/rest/wikis/xwiki/s3files/file/logo-generic.png",
+        use_container_width=True
+    )
 
 # --- Header Section ---
 with st.container():
