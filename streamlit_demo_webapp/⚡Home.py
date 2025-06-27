@@ -17,15 +17,12 @@ st.markdown("""
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
-    [data-testid="stSidebarNav"] {
-        background-image: url(https://w.amazon.com/rest/wikis/xwiki/s3files/file/logo-generic.png);
-        background-repeat: no-repeat;
-        background-size: contain; /* Fit the logo without clipping */
-        padding-top: 100px;  /* Space for logo */
-        background-position: 20px 20px;
-    }
     </style>
 """, unsafe_allow_html=True)
+
+# --- Sidebar Logo ---
+with st.sidebar:
+    st.image("https://w.amazon.com/rest/wikis/xwiki/s3files/file/logo-generic.png", use_column_width=True)
 
 # --- Header Section ---
 with st.container():
