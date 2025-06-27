@@ -18,8 +18,13 @@ st.markdown("""
     footer {visibility: hidden;}
     header {visibility: hidden;}
 
-    /* Hide App Creator Avatar by data-testid */
-    img[data-testid="appCreatorAvatar"] {
+    /* Hide entire container that holds the App Creator avatar */
+    div:has(img[data-testid="appCreatorAvatar"]) {
+        display: none !important;
+    }
+
+    /* Also hide GitHub profile link if present separately */
+    a[href*="github.com"] {
         display: none !important;
     }
     </style>
