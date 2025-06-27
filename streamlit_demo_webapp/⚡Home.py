@@ -20,7 +20,6 @@ st.markdown("""
 
     /* Sidebar Logo Styling */
     [data-testid="stSidebarNav"] {
-        background-image: url(https://w.amazon.com/rest/wikis/xwiki/s3files/file/logo-generic.png);
         background-repeat: no-repeat;
         background-size: contain; /* Fit the logo without clipping */
         background-position: 20px 20px;
@@ -28,6 +27,10 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
+# --- Sidebar Logo ---
+with st.sidebar:
+    st.image("logo-generic.png", use_column_width=True)
 
 # --- Header Section ---
 with st.container():
